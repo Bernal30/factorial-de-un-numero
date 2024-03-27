@@ -3,13 +3,12 @@ body{
     font-optical-sizing: auto;
     font-weight: 100;
     font-style: normal;
-}
-
-body{
     background-color: #c8f5eb;
+    width: 100%;
 }
 
 header{
+    width: 100%;
     background-color: rgb(88, 177, 199);
     padding: 20px;
 }
