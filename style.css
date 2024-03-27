@@ -1,0 +1,262 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+body{
+    background-color: #c8f5eb;
+}
+
+header{
+    background-color: rgb(88, 177, 199);
+    padding: 20px;
+}
+
+.caja-1{
+    width: 1300px;
+    position: relative;
+    margin: 0 auto;
+    padding: 21px;
+}
+
+.titulo-main{
+    width: fit-content;
+    padding: 17px;
+    font-size: 47px;
+}
+
+nav{
+    position: absolute;
+    right: 0;
+    top: 50px;
+}
+
+nav li{
+    display: inline-block;
+    padding: 0 0 0 29px;  
+    
+}
+
+nav a{
+    font-size: 21px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #000;
+    transition: all 0.5s;
+}
+
+nav a:hover{
+    color: #df4472;
+    text-decoration: underline;
+}
+
+.caja-2{
+    width: 1250px;
+    margin: 11px auto;
+    padding: 10px 20px;
+    font-size: 23px;
+}
+
+.caja-2 .parrafo-1{
+    padding: 30px 0;
+}
+
+#imagenes-factorial{
+    display: block;
+    margin: 0 auto;
+    padding: 17px 0;
+    scale: 130%;
+}
+
+.caja-2 h2{
+    width: fit-content;
+    margin: 0 0 25px;
+    padding: 17px;
+    border: 1px solid #000;
+    border-radius: 11px;
+    background-color: rgb(88, 177, 199);
+}
+
+.caja-2 h2:hover{
+    background-color: #e67597;
+}
+
+.parrafo-2{
+    width: 950px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 11px;
+    background-color: rgb(88, 177, 199);
+    transition: all 0.5s;
+}
+
+.parrafo-2:hover{
+    background-color: #e67597;
+}
+
+.titulo-extencion{
+    width: fit-content;
+    padding: 11px;
+    margin: 0 0 15px;
+    background-color: rgb(88, 177, 199);
+    border: 1px solid #000;
+    border-radius: 11px;
+}
+
+.titulo-extencion:hover{
+    background-color: #e67597;
+}
+
+.caja-3{
+    width: 1250px;
+    margin: 11px auto;
+    padding: 10px 20px;
+}
+
+.titulo-graficas{
+    width: 390px;
+    padding: 20px 50px;
+    margin: 21px auto;
+    font-size: 23px;
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 11px;
+    background-color: rgb(88, 177, 199);
+    transition: 0.5s all;
+}
+
+.titulo-graficas:hover{
+    background-color: #e67597;
+    transform: scale(1.2);
+}
+
+#imagenes-graficas{
+    display: block;
+    margin: 0 auto;
+    padding: 17px 0;
+}
+
+.graficas-gamma{
+    width: 940px;
+    margin: 21px auto;
+    padding: 20px 50px;
+}
+
+.graficas-gamma li{
+    display: inline-block;
+    width: 45%;
+    text-align: center;
+    vertical-align: bottom;
+    box-sizing: border-box;
+    margin: 0 1.5%;
+    padding: 17px 20px;
+}
+
+.graficas-gamma li p{
+    font-size: 17px;
+    padding: 15px;
+    margin: 10px auto;
+    width: 60%;
+}
+
+.container__contenido{
+    display: flex;
+    align-items: center;
+    width: 700px;
+    margin: 50px auto;
+    padding: 50px 50px 190px 50px;
+}
+
+.container_informacion{
+    width: 31%;
+    padding: 50px;
+    display: block;
+    align-items: center;
+    flex: 1;
+    border: 3px solid rgb(23, 104, 124);
+    border-radius: 19px;
+    box-shadow: 11px 11px rgb(74, 151, 170);
+}
+
+.container_texto{
+    width: 75%;
+    margin: 30px auto;
+}
+
+.container_texto #titulo-factorial{
+    font-size: 35px;
+    width: 100%;
+    padding: 19px 0;
+
+}
+
+.container_texto #texto-funcion{
+    font-size: 23px;
+    font-weight: 300px;
+    width: 100%;
+    padding: 25px 0;
+    
+}
+
+div #texto-parrafo{
+    font-size: 23px;
+    font-weight: 300;
+    width: 100%;
+    padding: 25px 0;
+}
+
+.container__input{
+    width: 90%;
+    padding: 11px 0px 11px 15px;
+    border: 1px solid #000;
+    border-radius: 11px;
+    color: rgb(35, 143, 170);
+    font-size: 23px;
+}
+
+.bloque_container_botones{
+    display: flex;
+    gap: 2em;
+    width: 75%;
+    margin: 30px auto;
+}
+
+.container_botones{
+    font-size: 23px;
+    font-weight: 300;
+    border: none;
+    border-radius: 17px;
+    background: #7cdbc7;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.container_botones:hover{
+    transform: scale(1.1);
+}
+
+.container_botones:disabled{
+    background: #CCCCCC;
+}
+
+footer{
+    background: url(img/background-footer.jpg);
+    padding: 40px;
+}
+
+#cake{
+    display: block;
+    margin: 11px auto;
+}
+
+.agradecimiento{
+    background-color: #fff;
+    width: fit-content;
+    padding: 11px;
+    margin: 0 auto;
+    border-radius: 17px;
+}

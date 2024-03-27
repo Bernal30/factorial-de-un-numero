@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>El Factorial de un Número</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@100;100&display=swap" rel="stylesheet">
+        <link rel="icon" type="imagen/.jpg" href="img/factorial-icon-vector.jpg">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="caja-1">
+                <h1 class="titulo-main">La Función Factorial</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#calculo-factorial" title="Factorial de un número">Calcular Factorial</a></li>
+                        <li><a href="https://github.com/Bernal30" target="_blank" title="Perfil de GitHub">Perfil GitHub</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="caja-2">
+                <p class="parrafo-1">El factorial de un múmero positivo n o dicho de otra forma n factorial se define en principio como el producto de todos los enteros positivos desde uno (es decir, los números naturales) hasta n.</p>
+                <img src="img/definición_factorial.svg" alt="definicion_factorial" id="imagenes-factorial">
+            </div>
+            <div class="caja-2">
+                <h2>Cero Factorial</h2>
+                <p class="parrafo-1">El factorial de 0 puede ser confuso a priori pero hay buenas razones para definirlo como uno, una de ellas es por la propia definición de factorial, pues gracias a una propiedad de recusrsividad que tiene la función factorial se puede establecer que 0 factorial es igual a uno, la propiedad es la siguiente:</p>
+                <p class="parrafo-2">Para cada número entero positivo n mayor o igual que uno, es posible determinar el valor del factorial anterior mediante el uso de la siguiente identidad:</p>
+                <img src="img/propiedad_factorial.svg" alt="propiedad_factorial" id="imagenes-factorial">
+                <p class="parrafo-1">Si aplicamos la misma regla para el caso en que n = 1 tendríamos que 0! corresponde a:</p>
+                <img src="img/0_factorial.svg" alt="cero_factorial" id="imagenes-factorial">
+            </div>
+            <div class="caja-2">
+                <p class="titulo-extencion">Extención de la Función Factorial</p>
+                <p class="parrafo-1">La definición indicada anteriormente de factorial es válida para números no negativos. Es posible extender la definición a otros contextos introduciendo conceptos más sofisticados, en especial es posible definirla para cualquier número real excepto para los números enteros negativos y para cualquier número complejo exceptuando de nuevo los números enteros negativos. El factorial de n es generalizado para cualquier número real n por la función gamma que se define de la siguiente manera:</p>
+                <img src="img/funcion-gamma-definicion.svg" alt="definición_función_gamma" id="imagenes-factorial">
+                <p class="parrafo-1">Solo para n > 0. Se puede generalizar aún más, para todo número complejo z que no sea igual a un entero no positivo, mediante la siguiente definición:</p>
+                <img src="img/funcion-gamma-def-2.svg" alt="propiedad_función_gamma" id="imagenes-factorial"> 
+            </div>
+            <div class="caja-3">
+                <p class="titulo-graficas">Graficas de la Función Gamma en el plano de los números complejos</p>
+                <ul class="graficas-gamma">
+                    <li>
+                        <img src="img/Gamma1.png" alt="Gamma_en_los_complejos" id="imagenes-graficas">
+                        <P>La función Gamma en el plano complejo</P>
+                    </li>
+                    <li>
+                        <img src="img/220px-Gamma_abs_3D.png" alt="modulo_de_gamma" id="imagenes-graficas">
+                        <P>Módulo de la función Gamma en el plano complejo</P>
+                    </li>
+                </ul>
+            </div>
+            <div class="container__contenido" id="calculo-factorial">
+                <div class="container_informacion">
+                    <div class="container_texto">
+                        <p id="titulo-factorial">Factorial de un número natural.</p>
+                        <p id="texto-funcion">En esta sección podra calcular el factorial de un número entero positivo o el 0.</p>
+                        <p id="texto-parrafo"></p>
+                        <input type="number" id="valorUsuario" min="1" max="100" class="container__input">
+                    </div>
+                    
+                    <div class="bloque_container_botones">
+                        <button onclick="factorialNumeroUsuario();" class="container_botones" id="calculo_factorial">Calcular</button>
+                        <button onclick="IntentarDeNuevo();" class="container_botones" id="reinicio" disabled>Intentar de nuevo</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <img src="img/Cake_BE2.webp" alt="minecraft_cake" title="cake" id="cake">
+            <p class="agradecimiento">Gracias por estar aqui!!</p>
+        </footer>
+
+        <script src="app.js"></script>
+    </body>
+</html>
