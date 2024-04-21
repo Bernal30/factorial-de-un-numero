@@ -2,12 +2,12 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>El Factorial de un Número</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@100;100&display=swap" rel="stylesheet">
-        <link rel="icon" type="imagen/.jpg" href="img/factorial-icon-vector.jpg">
+        <link rel="icon" type="imagen/.jpg" href="img/Code_javascript_development-512.webp">
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
     </head>
@@ -26,8 +26,10 @@
         <main>
             <div class="caja-2">
                 <p class="parrafo-1">El factorial de un múmero positivo n o dicho de otra forma n factorial se define en principio como el producto de todos los enteros positivos desde uno (es decir, los números naturales) hasta n.</p>
-                <img src="img/definición_factorial.svg" alt="definicion_factorial" id="imagenes-factorial">
             </div>
+            <section class="contenedor_imagen_factotial">
+                <img src="img/definición_factorial.svg" alt="definicion_factorial" id="imagenes-factorial">
+            </section>
             <div class="caja-2">
                 <h2>Cero Factorial</h2>
                 <p class="parrafo-1">El factorial de 0 puede ser confuso a priori pero hay buenas razones para definirlo como uno, una de ellas es por la propia definición de factorial, pues gracias a una propiedad de recusrsividad que tiene la función factorial se puede establecer que 0 factorial es igual a uno, la propiedad es la siguiente:</p>
@@ -66,8 +68,8 @@
                     </div>
                     
                     <div class="bloque_container_botones">
-                        <button onclick="factorialNumeroUsuario();" class="container_botones" id="calculo_factorial">Calcular</button>
-                        <button onclick="IntentarDeNuevo();" class="container_botones" id="reinicio" disabled>Intentar de nuevo</button>
+                        <button class="container_botones" id="calculo_factorial">Calcular</button>
+                        <button class="container_botones" id="reinicio" disabled>Intentar de nuevo</button>
                     </div>
                 </div>
             </div>

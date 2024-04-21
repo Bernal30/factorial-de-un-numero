@@ -27,17 +27,20 @@ function factorialNumeroUsuario() {
     activarBotonReinicio();
     apagarBotonCalcular();
     if(numeroUsuario > 100){
-        let respuesta = asignarTextoHTML('texto-parrafo', `El número ingresado es mayor a 100.`);
-        return respuesta;
+        return asignarTextoHTML('texto-parrafo', `El número ingresado es mayor a 100.`);
     } else{
         if(numeroUsuario >= 0){
-            let respuesta = asignarTextoHTML('texto-parrafo', `El resultado de ${numeroUsuario}! (${numeroUsuario} factorial) es ${calculoFactorial(numeroUsuario)}.`);
-            return respuesta;
+            return asignarTextoHTML('texto-parrafo', `El resultado de ${numeroUsuario}! (${numeroUsuario} factorial) es ${calculoFactorial(numeroUsuario)}.`);
         } else{
-            let respuesta = asignarTextoHTML('texto-parrafo', `El número ingresado no es cero o un entero positivo.`);
-            return respuesta;
+            return asignarTextoHTML('texto-parrafo', `El número ingresado no es cero o un entero positivo.`);
         }
     }
+}
+
+let calculationFactorialButton = document.getElementById('calculo_factorial');
+//cuando se da clic en el boton "Calcular"
+calculationFactorialButton.onclick = function () {
+    return factorialNumeroUsuario();
 }
 
 //calculo del factorial de un número entero positivo o el cero
@@ -54,12 +57,19 @@ function vaciarInput() {
     return document.getElementById('valorUsuario').value = '';
 }
 
+//se habilita el boton "Intentar de nuevo"
 function activarBotonReinicio() {
     return document.getElementById('reinicio').removeAttribute('disabled');
 }
 
+//se deshabilita el boton "Calcular"
+function apagarBotonCalcular() {
+    document.getElementById('calculo_factorial').setAttribute('disabled', 'true');
+    return;
+}
+
 //se llama a esta función mediante el boton intentar de nuevo
-function IntentarDeNuevo() {
+function intentarDeNuevo() {
     //deshabilitar el boton intentar de nuevo
     document.getElementById('reinicio').setAttribute('disabled', 'true');
     //volver a la condicion inicial
@@ -69,7 +79,8 @@ function IntentarDeNuevo() {
     return;
 }
 
-function apagarBotonCalcular() {
-    document.getElementById('calculo_factorial').setAttribute('disabled', 'true');
-    return;
+let againCalculationButton = document.getElementById('reinicio');
+//cuando se da clic en el boton "Intentar de nuevo"
+againCalculationButton.onclick = function () {
+    return intentarDeNuevo();
 }

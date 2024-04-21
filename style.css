@@ -1,21 +1,26 @@
+html {
+    width: 100%;
+}
+
 body{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 100;
     font-style: normal;
     background-color: #c8f5eb;
-    width: 100%;
 }
 
 header{
     width: 100%;
     background-color: rgb(88, 177, 199);
-    padding: 20px;
+    padding: 20px 0;
 }
 
 .caja-1{
-    width: 1300px;
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
     margin: 0 auto;
     padding: 21px;
 }
@@ -27,15 +32,12 @@ header{
 }
 
 nav{
-    position: absolute;
-    right: 0;
-    top: 50px;
+    height: fit-content;
 }
 
 nav li{
     display: inline-block;
-    padding: 0 0 0 29px;  
-    
+    padding: 0 0 0 29px;
 }
 
 nav a{
@@ -76,10 +78,12 @@ nav a:hover{
     border: 1px solid #000;
     border-radius: 11px;
     background-color: rgb(88, 177, 199);
+    transition: all 0.5s;
 }
 
 .caja-2 h2:hover{
     background-color: #e67597;
+    cursor: default;
 }
 
 .parrafo-2{
@@ -94,6 +98,7 @@ nav a:hover{
 
 .parrafo-2:hover{
     background-color: #e67597;
+    cursor: default;
 }
 
 .titulo-extencion{
@@ -103,10 +108,12 @@ nav a:hover{
     background-color: rgb(88, 177, 199);
     border: 1px solid #000;
     border-radius: 11px;
+    transition: all 0.5s;
 }
 
 .titulo-extencion:hover{
     background-color: #e67597;
+    cursor: default;
 }
 
 .caja-3{
@@ -130,6 +137,7 @@ nav a:hover{
 .titulo-graficas:hover{
     background-color: #e67597;
     transform: scale(1.2);
+    cursor: default;
 }
 
 #imagenes-graficas{
@@ -139,14 +147,17 @@ nav a:hover{
 }
 
 .graficas-gamma{
-    width: 940px;
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     margin: 21px auto;
     padding: 20px 50px;
 }
 
 .graficas-gamma li{
     display: inline-block;
-    width: 45%;
+    width: 35%;
     text-align: center;
     vertical-align: bottom;
     box-sizing: border-box;
@@ -164,7 +175,7 @@ nav a:hover{
 .container__contenido{
     display: flex;
     align-items: center;
-    width: 700px;
+    width: 45%;
     margin: 50px auto;
     padding: 50px 50px 190px 50px;
 }
@@ -172,7 +183,8 @@ nav a:hover{
 .container_informacion{
     width: 31%;
     padding: 50px;
-    display: block;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     flex: 1;
     border: 3px solid rgb(23, 104, 124);
@@ -183,19 +195,24 @@ nav a:hover{
 .container_texto{
     width: 75%;
     margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container_texto p {
+    width: 100%;
 }
 
 .container_texto #titulo-factorial{
     font-size: 35px;
-    width: 100%;
     padding: 19px 0;
-
+    text-align: center;
 }
 
 .container_texto #texto-funcion{
     font-size: 23px;
     font-weight: 300px;
-    width: 100%;
     padding: 25px 0;
     
 }
@@ -203,7 +220,6 @@ nav a:hover{
 div #texto-parrafo{
     font-size: 23px;
     font-weight: 300;
-    width: 100%;
     padding: 25px 0;
 }
 
@@ -218,6 +234,7 @@ div #texto-parrafo{
 
 .bloque_container_botones{
     display: flex;
+    justify-content: space-evenly;
     gap: 2em;
     width: 75%;
     margin: 30px auto;
@@ -243,8 +260,9 @@ div #texto-parrafo{
 }
 
 footer{
+    width: 100%;
     background: url(img/background-footer.jpg);
-    padding: 40px;
+    padding: 40px 0;
 }
 
 #cake{
@@ -258,4 +276,72 @@ footer{
     padding: 11px;
     margin: 0 auto;
     border-radius: 17px;
+}
+
+
+@media screen and (max-width: 480px) {
+    html {
+        width: 100%;
+    }
+    .caja-1 {
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .titulo-main {
+        font-size: 2.5rem;
+        width: 100%;
+        text-align: center;
+    }
+    nav {
+        width: 80%;
+    }
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    nav li {
+        padding: 0;
+    }
+    nav li a {
+        font-size: 1rem;
+    }
+    .caja-1, .caja-2, .caja-3, .container__contenido, .parrafo-2 {
+        width: 100%;
+    }
+    .caja-2 {
+        margin: 0;
+    }
+    .caja-2 p {
+        font-size: 1.25rem;
+    }
+    .contenedor_imagen_factotial {
+        width: 100%;
+        margin: 0 10px;
+    }
+    #imagenes-factorial {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        scale: initial;
+    }
+
+    .caja-3 {
+        margin: 20px 0;
+    }
+    .titulo-graficas {
+        font-size: 1.25rem;
+        width: 90%;
+        margin: 30px 0;
+    }
+    .graficas-gamma {
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .graficas-gamma li {
+        width: 90%;
+    }
 }
