@@ -11,11 +11,11 @@ Aun que la pagina web ya está finalizada, aun hay cosa por pulir por lo que el 
 
 Para este proyecto de pagina web estatica solo se utilizaron las tres tecnologias principales de un pagina web:
 
-    - **HTML 5**
+- **HTML 5**
 
-    - **CSS 3**
+- **CSS 3**
 
-    - **JavaScrpit**
+- **JavaScrpit**
 
 ---
 
