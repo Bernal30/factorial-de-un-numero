@@ -6,7 +6,7 @@
 
 En esta pagina se habla un poco de la interesante `función factorial`, desde su definición matematica, un valor curioso como el cero factorial, su extención análitica al plano de los números reales y complejos, también al final hay un apartado para calcular el factorial de un número entero entre 1 y 100 implementando conocimientos de logica de programación.
 
-## Tecnologias 💻
+## Tecnologías 💻
 
 Para este proyecto landing page solo se utilizaron las tres tecnologias principales de un pagina web:
 
@@ -25,7 +25,7 @@ Al ingresar un número valido para calcular su factorial (un positivo entero o e
 </p>
 
 >[!NOTE]
->La función creada para el calculo del factorial esta diseñada para numeros enteros positivos y el cero.
+>Los números validos son el conjunto de los enteros positivos y el cero ya que la función creada para el calculo del factorial esta diseñada solo para estos números validos.
 
 ### Logica de los botones
 
