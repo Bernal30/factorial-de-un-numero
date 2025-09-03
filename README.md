@@ -21,7 +21,7 @@ Para este proyecto landing page solo se utilizaron las tres tecnologias principa
 Al ingresar un número valido para calcular su factorial (un positivo entero o el cero) en pantalla aparecera el resultado. Entre las funcionalidades de los botones puedes dar click en el boton **Calcular** o presionar **Enter** para ver el resultado.
 
 <p align="center">
-    <img src="img/web-interface/factorial-calculation-interface.png" width=50%>
+    <img src="img/web-interface/factorial-calculation-interface.png" width=90%>
 </p>
 
 >[!NOTE]
@@ -33,7 +33,7 @@ Los botones estaran habilitados bajo su respectiva lógica de uso, así cuando s
 Estas funcionalidades se logran gracias a la manipulación del atributo `disable` para botones en HTML mediante una lógica en javaScript:
 
 <p align="center">
-    <img src="img/code-screenshots/button-logic.png" width=60%>
+    <img src="img/code-screenshots/button-logic.png" width=90%>
 </p>
 
 ### Funcionalidades tecnicas 
@@ -41,27 +41,25 @@ Se modifico un detalle tecnico para mejorar la estructura del código y tambien 
 
 <p align="center">Código anterior:</p>
 <p align="center">
-    <img src="img/code-screenshots/old-code-1.png" width=60%>
+    <img src="img/code-screenshots/old-code-1.png" width=90%>
 </p>
 
 <p align="center">Código reestructurado:</p>
 <p align="center">
-    <img src="img/code-screenshots/restructured-code-1.png" width=60%>
+    <img src="img/code-screenshots/restructured-code-1.png" width=90%>
 
 </p>
 
 La modificación radica en implementar el método `addEventListener`, de modo que se logro capturar el evento al presionar la tecla enter y atribuirlo a la llamada de la función para calcular el factorial del número dado por el usuario; y al mismo tiempo se logro reducir seis lineas de código a solo dos.
 
 
-## Futuras implementaciones
+## Estado del proyecto y futuras implementaciones 🚧
+La pagina web aun está en desarrollo y mantenimiento para pulir detalles tecnicos, tambien para añadir contenido relevante en la pagina.
+
 Se espera añadir una mejora en los mensajes al hacer un intento en la sección de calcular el factorial, ya que el número al ser mayor de 21 el resultado se muestra con notación cientifica, sera ideal añadir un asección abajo explicando está notación y un mensaje cuando el numero sea mayor que 21 por ejemplo:
 >¡El número es tan vasto que se necesita notación cientifica!
 
-    También se busca añadir una sección en el readme para mostrar la función creada para el calculo de un número entero positivo o el cero.
-
-## Estado del proyecto 🚧
-
-La pagina web aun está en desarrollo y mantenimiento para pulir detalles tecnicos, tambien para añadir contenido relevante en la pagina.
+También se busca añadir una sección en el readme para mostrar la función creada para el calculo de un número entero positivo o el cero.
 
 ## Autor
 
